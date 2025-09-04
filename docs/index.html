@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pendulum Simulations Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+            background: #fff;
+            color: #222;
+            transition: background 0.3s, color 0.3s;
+        }
+        ul { line-height: 2; }
+        .desc { color: #555; margin-left: 1em; }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #181a1b;
+                color: #e0e0e0;
+            }
+            .desc { color: #aaa; }
+            a { color: #8ec7ff; }
+            a:visited { color: #b39ddb; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Pendulum Simulations</h1>
+    <ul>
+        <li>
+            <a href="multi_link_pendulum.html">Multi-Link Pendulum</a>
+            <span class="desc"><b>Simulation and animation of a multi-link pendulum</b> <br>Symbolically derives the dynamics of a multi-link pendulum with adjustable number of links. The multi-link pendulum is then simulated for some example parameters and the solution is shown in an animation.</span>
+        </li>
+        <li>
+            <a href="triple_pendulum_swing_up.html">Triple Pendulum // Swing-Up</a>
+            <span class="desc"><b>Simulation and animation of fall and swing-up maneuver of a triple pendulum</b> <br>After symbolic derivation of the dynamics of a triple pendulum, the feedfoward for a swing-up maneuver is numerically computed using scipy's boundary value problem solver. Additionally, a state feedback is designed based on the dynamics linearized around the feedforward trajectory. Finally, an authentic simulation including parameter deviations and process noise is done and the solution is shown in an animation.</span>
+        </li>
+        <li>
+            <a href="triple_pendulum_periodic_orbit.html">Triple Pendulum // Periodic Orbit</a>
+            <span class="desc"><b>Simulation and animation of a perioidc orbit of a triple pendulum</b> <br>Similar to the previous notebook, except for maneuver containing a periodic orbit. This periodic orbit is a circular motion of the third link while the first two links stay close to their upright configuration.</span>
+        </li>
+    </ul>
+</body>
+</html>

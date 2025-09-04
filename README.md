@@ -8,14 +8,18 @@ The paper presents the design and implementation of a periodic orbit maneuver of
 
 ## Notebooks
 
-- **[multi_link_pendulum.ipynb:](https://nbviewer.org/github/mullen25312/pendulum-simulations/blob/master/multi_link_pendulum.ipynb)** Symbolically derives the dynamics of a multi-link pendulum with adjustable number of links. The multi-link pendulum is then simulated for some example parameters and the solution is shown in an animation.
+- **[multi_link_pendulum.ipynb:](https://mullen25312.github.io/pendulum-simulations/multi_link_pendulum.html)** Symbolically derives the dynamics of a multi-link pendulum with adjustable number of links. The multi-link pendulum is then simulated for some example parameters and the solution is shown in an animation.
 
-- **[triple_pendulum_swing_up.ipynb:](https://nbviewer.org/github/mullen25312/pendulum-simulations/blob/master/triple_pendulum_swing_up.ipynb)** After symbolic derivation of the dynamics of a triple pendulum, the feedfoward for a swing-up maneuver is numerically computed using scipy's boundary value problem solver. Additionally, a state feedback is designed based on the dynamics linearized around the feedforward trajectory. Finally, an authentic simulation including parameter deviations and process noise is done and the solution is shown in an animation.
+- **[triple_pendulum_swing_up.ipynb:](https://mullen25312.github.io/pendulum-simulations/triple_pendulum_swing_up.html)** After symbolic derivation of the dynamics of a triple pendulum, the feedfoward for a swing-up maneuver is numerically computed using scipy's boundary value problem solver. Additionally, a state feedback is designed based on the dynamics linearized around the feedforward trajectory. Finally, an authentic simulation including parameter deviations and process noise is done and the solution is shown in an animation.
 
-- **[triple_pendulum_periodic_orbit.ipynb:](https://nbviewer.org/github/mullen25312/pendulum-simulations/blob/master/triple_pendulum_periodic_orbit.ipynb)** Similar to the previous notebook, except for maneuver containing a periodic orbit. This periodic orbit is a circular motion of the third link while the first two links stay close to their upright configuration.
+- **[triple_pendulum_periodic_orbit.ipynb:](https://mullen25312.github.io/pendulum-simulations/triple_pendulum_periodic_orbit.html)** Similar to the previous notebook, except for maneuver containing a periodic orbit. This periodic orbit is a circular motion of the third link while the first two links stay close to their upright configuration.
 
 ## Rendering
 
-Unfortunately, Github's document view is not capable of showing rendered outputs. It is recommended to view these notebooks in nbviewer using the following link:
+Unfortunately, Github's document view is not capable of showing rendered outputs. ~~It is recommended to view these notebooks in nbviewer using the following link:~~
 
-> <https://nbviewer.org/github/mullen25312/pendulum-simulations/tree/master/>
+~~> <https://nbviewer.org/github/mullen25312/pendulum-simulations/tree/master/>~~
+
+Meanwhile, with github pages it is possbile to view these notebooks with rendered output (using nbconvert):
+
+<https://mullen25312.github.io/pendulum-simulations/>
